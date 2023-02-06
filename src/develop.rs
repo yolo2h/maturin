@@ -53,7 +53,7 @@ pub fn develop(
     let build_options = BuildOptions {
         platform_tag: vec![PlatformTag::Linux],
         interpreter: vec![python.clone()],
-        find_interpreter: false,
+        find_interpreter: true,
         bindings,
         out: Some(wheel_dir.path().to_path_buf()),
         skip_auditwheel: false,
